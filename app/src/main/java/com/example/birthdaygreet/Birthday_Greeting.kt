@@ -6,13 +6,13 @@ import androidx.appcompat.app.AppCompatActivity
 
 class Birthday_Greeting : AppCompatActivity() {
     companion object{
-        const val NAME_EXTRA="name_extra"
+        val Nil="k"
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_birthday_greeting)
        val ni=findViewById<TextView>(R.id.Eilsh_ranjan)
-        val name=intent.getStringExtra(NAME_EXTRA)
+        val name=intent.getStringExtra(Nil)
         ni.text="happy birthday $name"
 
 

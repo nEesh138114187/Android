@@ -26,8 +26,8 @@ class MainActivity : AppCompatActivity() {
         n = nil.text.toString()
 
         // Toast.makeText(this, "Happy Birthday $n", Toast.LENGTH_SHORT).show()
-        val intent= Intent(this,Birthday_Greeting::class.java)
-        intent.putExtra(Birthday_Greeting.NAME_EXTRA,n)
+        intent= Intent(applicationContext,Birthday_Greeting::class.java)
+        intent.putExtra(Birthday_Greeting.Nil,n)
         startActivity(intent)
     }
 }
